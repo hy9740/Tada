@@ -50,43 +50,4 @@ with col1:
 
 with col2:
     st.subheader('2.2. 통분')
-    st.latex(r'\frac{A}{B} = \frac{A \times C}{B \times C} \quad (C \neq 0)')
-    st.markdown('*분모를 최소공배수로 맞추기 위해 곱합니다.*')
-    
-    st.info('**예제:** $\\frac{1}{x-1}$ 와 $\\frac{1}{x+1}$ 를 통분하면?')
-    st.latex(r'\frac{1}{x-1} \to \frac{x+1}{(x-1)(x+1)}, \quad \frac{1}{x+1} \to \frac{x-1}{(x-1)(x+1)}')
-
-# ----------------------------------------------------
-st.markdown('---')
-st.header('3. 사칙연산 (덧셈, 뺄셈, 곱셈, 나눗셈)')
-
-st.markdown('유리식의 사칙연산은 일반적인 분수의 사칙연산과 동일한 방법으로 계산합니다.')
-
-# 덧셈/뺄셈
-st.subheader('3.1. 덧셈과 뺄셈')
-st.markdown('분모를 **통분**한 후, 분자끼리 더하거나 뺍니다.')
-st.latex(r'\frac{A}{C} \pm \frac{B}{C} = \frac{A \pm B}{C}')
-
-# 곱셈/나눗셈
-st.subheader('3.2. 곱셈과 나눗셈')
-st.markdown('곱셈은 분자는 분자끼리, 분모는 분모끼리 곱합니다. 나눗셈은 나누는 식을 역수로 바꾸어 곱합니다.')
-st.latex(r'\frac{A}{B} \times \frac{C}{D} = \frac{A \times C}{B \times D}')
-st.latex(r'\frac{A}{B} \div \frac{C}{D} = \frac{A}{B} \times \frac{D}{C} = \frac{A \times D}{B \times C}')
-
-# ----------------------------------------------------
-st.markdown('---')
-st.header('4. 유리식의 계산에서 중요한 조건')
-
-st.markdown("""
-유리식을 계산할 때는 분모가 0이 되지 않도록 항상 주의해야 합니다.
-**분모가 0이 되는 $x$ 값**에서는 함수가 정의되지 않습니다.
-""")
-
-st.warning(r'❗ **주의**: 유리식 $\frac{A}{B}$ 가 정의되기 위한 조건은 **$B \neq 0$** 입니다.')
-
-st.info('**학습 팁**')
-st.markdown("""
-1.  **약분/통분 전:** 분자와 분모를 **인수분해**하는 연습을 하세요.
-2.  **나눗셈:** 역수를 취하는 과정에서 실수가 없도록 주의하세요.
-3.  **부분분수 변형:** 복잡한 유리식의 합을 계산할 때 유용하며, 나중에 학습합니다.
-""")
+    st.latex(r'\frac{A}{B} = \
